@@ -51,7 +51,7 @@ planetsCaps = planets.map(function (e) {
 const writePlanetsWithEHeader = document.createElement("h1")
     writePlanetsWithEHeader.textContent ="Planet Names That Contain 'E'"
     planetEl.appendChild(writePlanetsWithEHeader)
-planetsWithE = planets.filter(function (e) {
+const planetsWithE = planets.filter(function (e) {
     const planE = e.includes('e')
     if (planE === true) {
     const writeEPlanets = document.createElement("p")
@@ -62,4 +62,14 @@ planetsWithE = planets.filter(function (e) {
 });
 
 // Use the reduce method to create a sentence from the words in the following array
-const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
+const words = ["This", "sentence", "has", "nothing", "to", "do", "with", "planets", "and", "I", "can't", "handle", "it"]
+
+const nonPlanetsHeader = document.createElement("h1")
+    nonPlanetsHeader.textContent ="This is a non-planet exercise on a planet page."
+    planetEl.appendChild(nonPlanetsHeader)
+const nonPlanetyWork = words.reduce(function e (accum,currentValue ) {
+    return `${accum}`+ " " + ` ${currentValue}`
+})
+    const wordArray = document.createElement("p")
+    wordArray.textContent = nonPlanetyWork
+    planetEl.appendChild(wordArray)
