@@ -67,7 +67,7 @@ const words = ["This", "sentence", "has", "nothing", "to", "do", "with", "planet
 const nonPlanetsHeader = document.createElement("h1")
     nonPlanetsHeader.textContent ="This is a non-planet exercise on a planet page."
     planetEl.appendChild(nonPlanetsHeader)
-const nonPlanetyWork = words.reduce(function e (accum,currentValue ) {
+const nonPlanetyWork = words.reduce((accum,currentValue ) => {
     return `${accum}`+ " " + ` ${currentValue}`
 })
     const wordArray = document.createElement("p")
